@@ -1,6 +1,0 @@
-com\a28i\selenium\service\ScrappMatchService.class
-com\a28i\selenium\service\ScrapResultService.class
-com\a28i\selenium\config\SeleniumConfig.class
-com\a28i\selenium\ServletInitializer.class
-com\a28i\selenium\controller\ScrapController.class
-com\a28i\selenium\SeleniumApplication.class
