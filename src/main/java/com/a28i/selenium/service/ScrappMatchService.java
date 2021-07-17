@@ -30,7 +30,7 @@ public class ScrappMatchService {
 
             // open a28i homepage ,fill credential and login
             final WebElement form = driver.findElementById("login-form");
-            final WebElement button = driver.findElementByClassName("jss15");
+            // final WebElement button = driver.findElementByClassName("jss15");
             final WebElement usernameInput = form.findElement(By.id("username"));
             final WebElement passwordInput = form.findElement(By.id("password"));
 
@@ -41,7 +41,8 @@ public class ScrappMatchService {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            button.click();
+            // button.click();
+            form.submit();
 
             new WebDriverWait(driver, 50).until(ExpectedConditions.urlToBe("https://web.a28i.com/terms"));
             driver.get("https://web.a28i.com/odds");

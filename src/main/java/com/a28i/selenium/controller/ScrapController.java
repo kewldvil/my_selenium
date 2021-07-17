@@ -41,7 +41,6 @@ public class ScrapController {
     public Map<String, String> viewTableMatch() {
         Map<String, String> match = new HashMap<>();
         match.put("matchs", scrapMatchService.scrapTableMatch(url));
-
         return match;
     }
 

@@ -23,14 +23,15 @@ public class ScrapResultService {
 
         // open a28i homepage ,fill credential and login
         final WebElement form = driver.findElementById("login-form");
-        final WebElement button = driver.findElementByClassName("jss15");
+        // final WebElement button = driver.findElementByClassName("jss15");
         final WebElement usernameInput = form.findElement(By.id("username"));
         final WebElement passwordInput = form.findElement(By.id("password"));
 
         usernameInput.sendKeys("hgarun66002");
         passwordInput.sendKeys("123abc");
 
-        button.click();
+        // button.click();
+        form.submit();
         // open odds page and click Football(Early)
         new WebDriverWait(driver, 50).until(ExpectedConditions.urlToBe("https://web.a28i.com/terms"));
         driver.get("https://web.a28i.com/results");
